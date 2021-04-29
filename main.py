@@ -8,7 +8,6 @@
 
 from LinkedList import LinkedList
 from Student import Student
-from os import system
 import time
 import math
 
@@ -61,7 +60,7 @@ currentSign = signs.head
 # Notify user it's working
 print("Running...")
 # Counts down a week's simulated time
-while elapsedTime < Drake.schedule[-1]:
+while elapsedTime <= (Drake.schedule[-1] + studentTime):
 
     # Millisecond timer
     now = int(round(time.time() * 1000))
